@@ -48,7 +48,7 @@
     display: inline-block;
     margin: 0 10px;
     padding: 12px 0;
-    color: aliceblue;
+    color: white;
     border: .5px solid #fff;
     position: relative;
     z-index: 1;
@@ -61,7 +61,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background: #fff;
+    background: linear-gradient(rgba(255, 255, 255, 0.5), #696969);
     z-index: -1;
     transition: 0.5s;
 }
@@ -385,6 +385,11 @@ hr {
 
 /*footer*/
 
+.title-text h1 {
+    margin-top: 1%;
+    font-size: 20px;
+}
+
 #footer {
     padding: 10px 50px 20px;
     background: #000000;
@@ -399,25 +404,18 @@ hr {
 }
 
 .footer-left, .footer-right {
-    flex-basis: 45%;
+    flex-basis: 50%;
     padding: 0px; 
-    margin-bottom: 10px;
+    margin-bottom: 1%;
+    margin-top: -35px;
 }
 
 .footer-right {
     text-align: right;
 }
 
-.footer-row h1 {
-    margin: 8px 0;
-}
-
-.footer-row p {
-    line-height: 35px;
-}
-
 .sociallinks {
-    text-align: right;
+    text-align: center;
     color: #ffffff;
 }
 
@@ -435,8 +433,22 @@ hr {
     text-decoration: underline;
 }
 
-.footer-right button:hover {
-    text-decoration: none;
-    cursor: pointer;
+.footer-right a {
+    font-size: large;
+    color: #fff;
 }
 
+.footer-left a {
+    font-size: large;
+    color: #fff;
+}
+
+@media screen and (max-width: 700px) {
+    .footer-left, .footer-right {
+        flex-basis: 60%;
+        text-align: center;
+        padding: 10px; 
+        margin: auto;
+        margin-bottom: 10px;
+    }
+}
