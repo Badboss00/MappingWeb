@@ -149,7 +149,7 @@ nav ul li a {
     content: '';
     width: 50px;
     height: 35px;
-    background: linear-gradient(#f3f3f3, rgb(187, 187, 187));
+    background: transparent;
     position: absolute;
     top: -20px;
     left: 0;
